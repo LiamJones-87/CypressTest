@@ -1,2 +1,0 @@
-Feature: Page Displays Correctly
-
