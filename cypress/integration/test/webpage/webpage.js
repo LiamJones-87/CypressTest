@@ -17,20 +17,18 @@ When('I click on the button to view {string} details', (getButton)  => {
 
     const JS = 'John Smith'
     const JB = 'Jeff Bridges'
-    const LJ = 'Liam Jones'
-    const button = getButton
+    const SJ = 'Steve Jones'
 
-    cy.get('[type="button"]').then((button) =>{
-    if (button = JS) {
+    if (getButton == JS) {
         cy.get('[data-test="1"]').click()
     }
-    else if (button = JB) {  
+    else if (getButton == JB) {  
         cy.get('[data-test="2"]').click()
     }
-    else if (button = LJ) {
+    else if (getButton == SJ) {
         cy.get('[data-test="3"]').click()
     }
-})
+
 });
 
 When('I Click to view John Smiths details', () => {
