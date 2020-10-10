@@ -9,7 +9,7 @@ Given('I have navigated to the website', () => {
 
     //Fetch
     cy.wait(5000)
-    cy.log('I belive you are using fetch here, currently Cypress cannot handle fetch calls')
+    cy.log('I believe you are using fetch here, currently Cypress cannot handle fetch calls')
 });
 
 When('I click on the button to view {string} details', (getButton)  => {
