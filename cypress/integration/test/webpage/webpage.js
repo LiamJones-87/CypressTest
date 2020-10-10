@@ -8,7 +8,8 @@ Given('I have navigated to the website', () => {
     //cy.wait('@customer1')    
 
     //Fetch
-    cy.wait(5000).log('I belive you are using fetch here, currently Cypress cannot handle fetch calls')
+    cy.wait(5000)
+    cy.log('I belive you are using fetch here, currently Cypress cannot handle fetch calls')
 });
 
 When('I click on the button to view {string} details', (getButton)  => {
