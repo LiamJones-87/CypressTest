@@ -1,1 +1,3 @@
 cypress/videos/test/webpage.feature.mp4
+cypress/integration/test/webpage/*
+cypress/integration/webpage.feature

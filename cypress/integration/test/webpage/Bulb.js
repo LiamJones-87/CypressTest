@@ -4,15 +4,17 @@ describe('Bulb Test', () => {
 
     it('Test intercept', () => {
 
-        cy.intercept('/t').as('tacking')
+        //cy.intercept('/t').as('tacking')
 
-        cy.visit('www.bulb.co.uk')
+        cy.visit('https://calculator.bulb.co.uk/questions/transport')
 
-        cy.wait(['@tracking'])
+        //cy.wait(['@tracking'])
 
-        cy.get('[id="ThisChangesOnReleaod').type('Post Code')
+        //cy.get('[id="ThisChangesOnReleaod').type('Post Code')
 
-        cy.get('form').eq(0).submit()
-        
+        //cy.get('form').eq(0).submit()
+
+        cy.contains('Car').click()
+
     })
 })

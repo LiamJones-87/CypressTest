@@ -8,7 +8,24 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 
+//witch back to Feature File - Add to Cypress.json
+//"testFiles": "**/*.feature",
+
 //Student Portal Login
+
+Cypress.Commands.add('iframe', { prevSubject: 'element' }, ($iframe, selector) => {
+  Cypress.log({
+    name: 'iframe',
+    consoleProps() {
+      return {
+        iframe: $iframe,
+      };
+    },
+  });
+  return new Cypress.Promise(resolve => {
+    resolve($iframe.contents().find(selector));
+  });
+});
 
 Cypress.Commands.add('StudentPortalLogin', (email, password) => {
 
