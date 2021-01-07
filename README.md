@@ -1,5 +1,5 @@
 # CypressTest
-Creative Technologies - Technical Test
+Technical Test
 
 # System Requirements
 1. Node.js
