@@ -1,5 +1,3 @@
-let cookies = 0
-
 const getIframeDocument = () => {
     return cy
     .get('iframe[id="sp_message_iframe_368417"]')
@@ -27,18 +25,8 @@ Given('I have navigated to the Sky News Home page', () => {
 
     cy.clearCookies()
     cy.visit('www.skynews.com')
-      //.then((cookies)
-      //if (cookies = 0 ) {
+      
       getIframeBody().find('[aria-label="Accept"]').should('have.text', 'Accept').click()
-      //let cookies = 1
-      //} else {
-      //}
-
-      //})
-    
-    //cy.get('#iframe-id')
-    //.iframe('body #elementToFind')
-    //.should('exist')
 
 })
 
